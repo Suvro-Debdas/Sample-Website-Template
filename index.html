@@ -1,0 +1,917 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Karatowa</title>
+    <!-- google-fonts -->
+    <link
+        href="//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- //google-fonts -->
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link rel="stylesheet" href="assets/css/chat.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+
+<body>
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h1>
+                    <a class="navbar-brand" href="index.html"><i class="fa fa-headphones mr-1"
+                            aria-hidden="true"></i>KARATOWA</a>
+                </h1>
+                <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="tel: 9477063825">Call Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="tel: 9477063825">Wats App</a>
+                        </li>
+                        <!-- search button -->
+                        <div class="search-right">
+                            <a href="#search" class="btn" title="search"><span class="fa fa-search"
+                                    aria-hidden="true"></span></a>
+                            <!-- search popup -->
+                            <div id="search" class="pop-overlay">
+                                <div class="popup">
+                                    <h4 class="search-pop-text-w3 text-white text-center mb-4">Search Now</h4>
+                                    <form action="#error" method="GET" class="search-box">
+                                        <div class="input-search"> <span class="fa fa-search mr-2"
+                                                aria-hidden="true"></span><input type="search"
+                                                placeholder="Enter Keyword" name="search" required="required"
+                                                autofocus="" class="search-popup">
+                                        </div>
+                                        <button type="submit" class="btn btn-style-white search-btn">Search</button>
+                                    </form>
+                                </div>
+                                <a class="close" href="#close">×</a>
+                            </div>
+                            <!-- //search popup -->
+                        </div>
+                        <!-- //search button -->
+                    </ul>
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="cont-ser-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--//header-->
+
+    <!-- banner section -->
+    <section class="w3l-banner pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 banner-left">
+                    <h3 class="text-white mb-3 title">Quality is our first priority<br>
+                        We Publish <span class="type-js"><span class="text-js"> You! </span></span></h3>
+                    <p class="lead text-white">Karatowa is the leading self book publishing house in India.
+                        <br> We Provide Best and affordable service to our clients.
+                    </p>
+                    <div class="mt-5">
+                        <a class="btn btn-style-white" href="about.html">View Our Works</a>
+                    </div>
+                </div>
+            </div>      
+        </div>
+
+    <!-- CHAT BAR BLOCK -->
+        
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">We welcome you!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+                            
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                        <script src="assets/js/responses.js"></script>
+                        <script src="assets/js/chat.js"></script>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+
+    <!-- //banner section -->
+
+    <!-- about -->
+    <section class="w3l-features-photo-7 py-5">
+        <div class="container py-md-5 py-4">
+            <div class="row w3l-features-photo-7_top">
+                <div class="col-lg-6 w3l-features-photo-7_top-left pr-lg-5">
+                    <h4 class="title-style mb-2">About Us</h4>
+                    <p>Are you looking for proof-readers to go through your manuscript before you can publish it? 
+                        We are here to provide you affordable manuscript proofreading services which will help you to get the book in the best form. 
+                        We believe in the craft of editing and proofreading which, like writing, has to be consistently honed, developed and practiced.  
+                        Our proofreading team identifies the character of your manuscript and endeavours to maintain the harmony between the words as they were beautifully strung together by you.
+                    </p>
+                    <div class="row feat_top mt-4 pt-lg-3">
+                        <div class="col-6 w3l-features-photo-7-box">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <h5 class="w3l-feature-text my-2">Our Mission</h5>
+                            <p>We oversee the entire process of bringing any book to the market such as author selection and development, manuscript editing, promotion, distribution and financial management.</p>
+                        </div>
+                        <div class="col-6 w3l-features-photo-7-box">
+                            <i class="fa fa-angellist" aria-hidden="true"></i>
+                            <h5 class="w3l-feature-text my-2">Our Vision</h5>
+                            <p>Our mission is to put the power of publishing into everyone's hands.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 w3l-features-photo-7_top-right mt-lg-0 mt-sm-5 mt-4">
+                    <img src="assets/images/about.jpg" class="img-responsive" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //about -->
+
+    <!-- services section -->
+    <section class="w3l-content-11-main">
+        <div class="content-design-11 py-5">
+            <div class="container py-md-5 py-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="section-heading text-center mb-sm-5 mb-4">
+                            <h3 class="title-style mb-2">We Provide Best Services</h3>
+                            <p class="lead">
+                                “There is a spiritual aspect to our lives — when we give, we receive — when a business does something good for somebody, 
+                                that somebody feels good about them!” – Ben Cohen, Co-Founder Ben & Jerry’s.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-sec-11">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="services-single d-flex p-sm-5 p-4">
+                                <div class="service-icon mr-sm-4 mr-3">
+                                    <span class="fa fa-headphones" aria-hidden="true"></span>
+                                </div>
+                                <div class="services-content">
+                                    <h5><a href="services.html">Book Editing & Proof Reading</a></h5>
+                                    <p>In basic editing, we correct grammatical errors, spelling mistakes, punctuation, inappropriate length of the sentences and jargons. 
+                                        The intent of the sentences is not modified. No attempt is made to tamper with the writing style of the author. 
+                                        The simplicity of the sentences is maintained as-is. Proofreading is done after the interior is designed with the edited text. 
+                                        Proofreading is done to ensure there are absolutely no errors or typos in the composed interior file.</p>
+                                    <a href="#services" class="btn read-button d-flex align-items-center mt-4 p-0">Read
+                                        More<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="services-single d-flex p-sm-5 p-4">
+                                <div class="service-icon mr-sm-4 mr-3">
+                                    <span class="fa fa-bullhorn" aria-hidden="true"></span>
+                                </div>
+                                <div class="services-content">
+                                    <h5><a href="services.html">Comprehensive Editing & Proofreading</a></h5>
+                                    <p>In Comprehensive editing, the editor not only corrects any obvious errors (grammatical errors, spelling mistakes and punctuation), 
+                                        but also rewrites sentences and paragraphs, if required to remove inconsistencies and ambiguities. 
+                                        The editor uses his/her expertise to ensure that the document makes sense, and the text is clearer and more understandable.</p>
+                                    <a href="#services" class="btn read-button d-flex align-items-center mt-4 p-0">Read
+                                        More<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="services-single d-flex p-sm-5 p-4">
+                                <div class="service-icon mr-sm-4 mr-3">
+                                    <span class="fa fa-volume-control-phone" aria-hidden="true"></span>
+                                </div>
+                                <div class="services-content">
+                                    <h5><a href="services.html">Basic Cover Design</a></h5>
+                                    <p>Book cover is the face of a book. The face has to represent the true character and voice of the work it stands for. 
+                                        Hence, book cover design is an important task to be accomplished carefully to make the book a success. 
+                                        In basic cover design, we find suitable images matching the content from various stock photo repositories and provide the author with a variety of templates/designs to choose from. 
+                                        Aspects of the book cover touched include: front cover, title design, spine, back cover including book summary and author biography and ISBN barcode.</p>
+                                    <a href="#services" class="btn read-button d-flex align-items-center mt-4 p-0">Read
+                                        More<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="services-single d-flex p-sm-5 p-4">
+                                <div class="service-icon mr-sm-4 mr-3">
+                                    <span class="fa fa-handshake-o" aria-hidden="true"></span>
+                                </div>
+                                <div class="services-content">
+                                    <h5><a href="services.html">Premium Cover Design</a></h5>
+                                    <p>In premium cover design, expert designers review the work and custom design the cover matching the work type. 
+                                        We provide the author with a couple of designs to choose from. Professional consultation is associated along with custom design choice. 
+                                        After mutual consensus, we finalize the cover design for the book.</p>
+                                    <a href="#services" class="btn read-button d-flex align-items-center mt-4 p-0">Read
+                                        More<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="services-single d-flex p-sm-5 p-4">
+                                <div class="service-icon mr-sm-4 mr-3">
+                                    <span class="fa fa-volume-control-phone" aria-hidden="true"></span>
+                                </div>
+                                <div class="services-content">
+                                    <h5><a href="services.html">Custom Illustrations</a></h5>
+                                    <p>Advanced interior designing is meant for interior of book which has images, tables, bullets, numbering, graphs and other advanced text. 
+                                        The books of academic genre are also falling under advanced text interior designing.</p>
+                                    <a href="#services" class="btn read-button d-flex align-items-center mt-4 p-0">Read
+                                        More<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="services-single d-flex p-sm-5 p-4">
+                                <div class="service-icon mr-sm-4 mr-3">
+                                    <span class="fa fa-handshake-o" aria-hidden="true"></span>
+                                </div>
+                                <div class="services-content">
+                                    <h5><a href="services.html">Social Media Promotion</a></h5>
+                                    <p>Deciding to go for social media promotion is one of the smartest investments an author can make. 
+                                        We will be creating social media profiles for you in Facebook, Twitter, LinkedIn etc. 
+                                        We will also be managing your social media pages for a month with regular posts and thereafter we will be sharing the credentials so that you can also manage the page. 
+                                        Social media helps self-published authors to directly connect with their target audience.</p>
+                                    <a href="#services" class="btn read-button d-flex align-items-center mt-4 p-0">Read
+                                        More<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="services-single d-flex p-sm-5 p-4">
+                                <div class="service-icon mr-sm-4 mr-3">
+                                    <span class="fa fa-volume-control-phone" aria-hidden="true"></span>
+                                </div>
+                                <div class="services-content">
+                                    <h5><a href="services.html">Google Ad Campaign</a></h5>
+                                    <p>Whether you're looking to attract new readers, grow online sales, get the phone ringing or keep customers coming back for more, Google Ad Words can help. 
+                                        You can reach relevant readers on relevant book selling page across the web. 
+                                        We will be setting up Google ads for your and whenever your book name or the theme of the book is searched; your book will be on top results in Google. 
+                                        You can customise the daily invest on Google ads since it charges for per click on your selling page. 
+                                        When we set up the Google Ad Campaign, it will be for a month and then you can manage the Ad words with small daily investment.</p>
+                                    <a href="#services" class="btn read-button d-flex align-items-center mt-4 p-0">Read
+                                        More<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="services-single d-flex p-sm-5 p-4">
+                                <div class="service-icon mr-sm-4 mr-3">
+                                    <span class="fa fa-handshake-o" aria-hidden="true"></span>
+                                </div>
+                                <div class="services-content">
+                                    <h5><a href="services.html">Facebook Ad Campaign</a></h5>
+                                    <p>Facebook is the biggest platforms for authors to promote their book. 
+                                        Facebook Ad Campaign will display the Ad of your Facebook page everywhere so that your target audience will keep on connecting on that page. 
+                                        We will run the Facebook Ad by boosting the posts and creating search keywords for your Facebook page. 
+                                        The process of running a Facebook page is same as that of Google Ad Campaign.</p>
+                                    <a href="#services" class="btn read-button d-flex align-items-center mt-4 p-0">Read
+                                        More<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="services-single d-flex p-sm-5 p-4">
+                                <div class="service-icon mr-sm-4 mr-3">
+                                    <span class="fa fa-volume-control-phone" aria-hidden="true"></span>
+                                </div>
+                                <div class="services-content">
+                                    <h5><a href="services.html">Video Trailer Launch</a></h5>
+                                    <p>YouTube and Vimeo are the biggest platforms for videos and trailers. 
+                                        We will be creating a video teaser based on the theme of the book and it will be released on these sites. 
+                                        Apart from it, the video will be shared in social media as well. 
+                                        Video developers will read the blurb of the book and will discuss with you regarding the trailer before starting the process. 
+                                        The Trailer will reflect the theme of the book with 100% clarity and perfection since we are having professional video developer team.</p>
+                                    <a href="#services" class="btn read-button d-flex align-items-center mt-4 p-0">Read
+                                        More<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="services-single d-flex p-sm-5 p-4">
+                                <div class="service-icon mr-sm-4 mr-3">
+                                    <span class="fa fa-handshake-o" aria-hidden="true"></span>
+                                </div>
+                                <div class="services-content">
+                                    <h5><a href="services.html">Author Website</a></h5>
+                                    <p>Having an author website for every author is must. 
+                                        It is the platform through which your readers may know about yourself and about your book also. 
+                                        We provide one year of free hosting and domain along with service of author website designing. 
+                                        The service of SEO (Search Engine Optimisation) is included in author website.
+                                        Along with Book Promotion Services, you also need to focus on Author Branding and building an author profile of yourself. 
+                                        Our web development team will work on your website such that it will be one of the top results on google and other search engines. 
+                                        You can update your website anytime by just creating a support ticket without any additional cost.</p>
+                                    <a href="#services" class="btn read-button d-flex align-items-center mt-4 p-0">Read
+                                        More<i class="fa fa-angle-double-right ml-1" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-md-5 mt-4 text-center">
+                        <a class="btn btn-style-white btn-style-primary" href="services.html">Learn More Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //services section -->
+
+    <!-- stats -->
+    <section class="w3_stats py-5" id="stats">
+        <div class="container py-md-5 py-4">
+            <div class="w3-stats text-center py-md-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="section-heading text-center mb-sm-5 mb-4">
+                            <h3 class="title-style text-white mb-2">Our Amazing Statistics</h3>
+                            <p class="lead text-white">
+                                We are growing everyday....
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-3 col-6">
+                        <div class="counter">
+                            <span class="fa fa-users"></span>
+                            <div class="timer count-title count-number mt-3" data-to="12" data-speed="1500"></div>
+                            <p class="count-text">Employees</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="counter">
+                            <span class="fa fa-smile-o"></span>
+                            <div class="timer count-title count-number mt-3" data-to="5" data-speed="1500"></div>
+                            <p class="count-text">Statisfication</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mt-md-0 mt-5">
+                        <div class="counter">
+                            <span class="fa fa-phone"></span>
+                            <div class="timer count-title count-number mt-3" data-to="10" data-speed="1500"></div>
+                            <p class="count-text">Enquiries Per Day</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 mt-md-0 mt-5">
+                        <div class="counter">
+                            <span class="fa fa-trophy"></span>
+                            <div class="timer count-title count-number mt-3" data-to="8" data-speed="1500"></div>
+                            <p class="count-text">Win awards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //stats -->
+
+    <!-- customers section -->
+    <section class="w3l-customer-block py-5">
+        <div class="container py-md-5 py-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-heading text-center mb-sm-5 mb-4">
+                        <h3 class="title-style mb-2">Our Leaders</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="customer-single pr-lg-4">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adip iscing elit sed. orci urna. In et augue
+                            ornare, tempor
+                            massa
+                            in,
+                            luctus sapien. Proin a diam et dui fermentum dolor molestie vel id neque euismod massa a
+                            quam viverra
+                            et.
+                        </blockquote>
+                        <div class="customer-img d-flex align-items-center mt-4">
+                            <img src="assets/images/testi1.jpg" class="img-fluid mr-3" alt="" />
+                            <div class="customer-info">
+                                <h6>Theo Hall</h6>
+                                <small class="mb-0">Marketing Manager</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-md-0 mt-5">
+                    <div class="customer-single pr-lg-4">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adip iscing elit sed. orci urna. In et augue
+                            ornare, tempor
+                            massa
+                            in,
+                            luctus sapien. Proin a diam et dui fermentum dolor molestie vel id neque euismod massa a
+                            quam viverra
+                            et.
+                        </blockquote>
+                        <div class="customer-img d-flex align-items-center mt-4">
+                            <img src="assets/images/testi2.jpg" class="img-fluid mr-3" alt="" />
+                            <div class="customer-info">
+                                <h6>Jenna John</h6>
+                                <small class="mb-0">Co-founder of Company</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-md-0 mt-5">
+                    <div class="customer-single pr-lg-4">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adip iscing elit sed. orci urna. In et augue
+                            ornare, tempor
+                            massa
+                            in,
+                            luctus sapien. Proin a diam et dui fermentum dolor molestie vel id neque euismod massa a
+                            quam viverra
+                            et.
+                        </blockquote>
+                        <div class="customer-img d-flex align-items-center mt-4">
+                            <img src="assets/images/testi3.jpg" class="img-fluid mr-3" alt="" />
+                            <div class="customer-info">
+                                <h6>William Due</h6>
+                                <small class="mb-0">Team Leader</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //customers section -->
+
+    <!-- //client section -->
+
+    <section class="w3l-brands" id="clients">
+        <div class="container pb-md-5 pb-4">
+            <div class="company-logos text-center pt-5 border-top-w3l">
+                <h3 class="title-style mb-2">Our Clients</h3>
+                <br>
+                <div class="row logos">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <a href="#url"><img src="assets/images/logo1.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <a href="#url"><img src="assets/images/logo2.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-sm-0 mt-4">
+                        <a href="#url"><img src="assets/images/logo3.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-md-0 mt-4">
+                        <a href="#url"><img src="assets/images/logo4.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="#url"> <img src="assets/images/logo5.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="#url"> <img src="assets/images/logo1.png" alt="" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- blog section -->
+    <div class="w3l-grids-block-5 py-5">
+        <div class="container py-md-5 py-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-heading text-center mb-sm-5 mb-4">
+                        <h3 class="title-style mb-2">Our Latest Activity</h3>
+                        <p class="lead">
+                            Recently we have reached....
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog-card-single">
+                        <div class="grids5-info">
+                            <a href="#blog"><img src="assets/images/blog1.jpg" alt="" /></a>
+                            <div class="blog-info">
+                                <h5>November 3, 2020 - <a href="blog-single">New</a></h5>
+                                <h4><a href="#blog">Donec sed teus enime</a></h4>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="admin-list d-flex align-items-center justify-content-between">
+                                <li><a href="#blog"><span class="fa fa-user-circle"
+                                            aria-hidden="true"></span>
+                                        Admin</a></li>
+                                <li><a href="#blog"><span class="fa fa-comments" aria-hidden="true"></span>7
+                                        Comments</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-sm-0 mt-4">
+                    <div class="blog-card-single">
+                        <div class="grids5-info">
+                            <a href="#blog"><img src="assets/images/blog3.jpg" alt="" /></a>
+                            <div class="blog-info">
+                                <h5>November 6, 2020 - <a href="blog-single">New</a></h5>
+                                <h4><a href="#blog">It's enim ad minim aute</a></h4>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="admin-list d-flex align-items-center justify-content-between">
+                                <li><a href="#blog"><span class="fa fa-user-circle"
+                                            aria-hidden="true"></span>
+                                        Admin</a></li>
+                                <li><a href="#blog"><span class="fa fa-comments" aria-hidden="true"></span>3
+                                        Comments</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-lg-0 mt-4">
+                    <div class="blog-card-single">
+                        <div class="grids5-info">
+                            <a href="#blog"><img src="assets/images/blog2.jpg" alt="" /></a>
+                            <div class="blog-info">
+                                <h5>November 7, 2020 - <a href="blog-single">New</a></h5>
+                                <h4><a href="#blog">Ullamco laboris nisi uts</a></h4>
+                                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="admin-list d-flex align-items-center justify-content-between">
+                                <li><a href="#blog"><span class="fa fa-user-circle"
+                                            aria-hidden="true"></span>
+                                        Admin</a></li>
+                                <li><a href="#blog"><span class="fa fa-comments" aria-hidden="true"></span>5
+                                        Comments</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //blog section -->
+
+    <!-- call section -->
+    <section class="w3l-call-to-action-6">
+        <div class="call-sec-style py-5">
+            <div class="container py-md-4 py-3">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-float-lt">
+                        <h3 class="title-big">Feel free to contact!</h3>
+                        <p>For any queries, please call us today.</p>
+                    </div>
+                    <div class="col-md-7 float-rt text-md-right align-items-center mt-md-0 mt-4">
+                        <ul class="buttons">
+                            <li class="phone-sec"><span class="fa fa-volume-control-phone mr-1"
+                                    aria-hidden="true"></span>
+                                <a class="call-style-w3" href="tel:+1(23) 456 789 0000">9477063825</a>
+                            </li>
+                            <li class="green">Or</li>
+                            <li><a href="contact.html" class="btn btn-style-white btn-style-primary">Get in touch</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //call section -->
+
+    <!-- footer -->
+    <section class="w3l-footer-29-main">
+        <div class="footer-29 py-5">
+            <div class="container py-lg-4">
+                <div class="row footer-top-29">
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-md-3 col-6 footer-list-29">
+                                <ul>
+                                    <h6 class="footer-title-29">Company</h6>
+                                    <li><a href="services.html">About Our Services</a></li>
+                                    <li><a href="#call-center">Our Projects</a></li>
+                                    <li><a href="#blog">View Our Blog</a></li>
+                                    <li><a href="about.html">Check Our Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-6 footer-list-29">
+                                <ul>
+                                    <h6 class="footer-title-29">Quick Links</h6>
+                                    <li><a href="#call-center">Management</a></li>
+                                    <li><a href="services.html">Department Services</a></li>
+                                    <li><a href="#call-center">Make Appointment</a></li>
+                                    <li><a href="about.html">Our Business Growth</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-6 footer-list-29 mt-md-0 mt-4">
+                                <ul>
+                                    <h6 class="footer-title-29">Support</h6>
+                                    <li><a href="#call-center">Live Chart</a></li>
+                                    <li><a href="#call-center">Faq's</a></li>
+                                    <li><a href="#call-center"> Support</a></li>
+                                    <li><a href="#call-center">Terms of Service</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-6 footer-list-29 mt-md-0 mt-4">
+                                <h6 class="footer-title-29">More Info</h6>
+                                <ul>
+                                    <li><a href="#privacy">Privacy Policy</a></li>
+                                    <li><a href="#terms"> Terms of Service</a></li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="#support"> Support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 footer-contact-list mt-lg-0 mt-md-5 mt-4">
+                        <h6 class="footer-title-29">Contact Info </h6>
+                        <ul>
+                            <li class="d-flex align-items-center py-2"><i class="fa fa-map-marker mr-2"
+                                    aria-hidden="true"></i>61/1 Jora Bagan Road, Kolkata - 700047, West Bengal.</li>
+                            <li class="d-flex align-items-center py-2"><i class="fa fa-phone mr-2"
+                                    aria-hidden="true"></i><a href="tel:+12 23456790">9477063825</a></li>
+                            <li class="d-flex align-items-center py-2"><i class="fa fa-envelope mr-2"
+                                    aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //footer -->
+    <!-- copyright -->
+    <section class="w3l-copyright">
+        <div class="container">
+            <div class="row bottom-copies">
+                <p class="col-lg-8 copy-footer-29">© 2020 Call Center. All rights reserved. Design by <a
+                        href="https://w3layouts.com/" target="_blank">
+                        W3Layouts</a></p>
+                <div class="col-lg-4 text-right">
+                    <div class="main-social-footer-29">
+                        <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+                        <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+                        <a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+                        <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+                        <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //copyright -->
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-level-up" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="assets/js/theme-change.js"></script>
+    <script>
+        function autoType(elementClass, typingSpeed) {
+            var thhis = $(elementClass);
+            thhis.css({
+                "position": "relative",
+                "display": "inline-block"
+            });
+            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+            thhis = thhis.find(".text-js");
+            var text = thhis.text().trim().split('');
+            var amntOfChars = text.length;
+            var newString = "";
+            thhis.text("|");
+            setTimeout(function () {
+                thhis.css("opacity", 1);
+                thhis.prev().removeAttr("style");
+                thhis.text("");
+                for (var i = 0; i < amntOfChars; i++) {
+                    (function (i, char) {
+                        setTimeout(function () {
+                            newString += char;
+                            thhis.text(newString);
+                        }, i * typingSpeed);
+                    })(i + 1, text[i]);
+                }
+            }, 1500);
+        }
+
+        $(document).ready(function () {
+            // Now to start autoTyping just call the autoType function with the 
+            // class of outer div
+            // The second paramter is the speed between each letter is typed.   
+            autoType(".type-js", 200);
+        });
+    </script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- magnific popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+
+            $('.popup-with-move-anim').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-slide-bottom'
+            });
+        });
+    </script>
+    <!-- //magnific popup -->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- counter for stats -->
+    <script src="assets/js/counter.js"></script>
+    <!-- //counter for stats -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!--bootstrap-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- //bootstrap-->
+    <!-- //Js scripts -->
+
+</body>
+
+</html>
